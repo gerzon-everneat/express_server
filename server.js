@@ -1,9 +1,14 @@
 const express = require("express");
 const app = express();
+const port = 3000; // Choose your desired port
 
-// Serve static files from the 'dist' folder
-app.use(express.static("neatlist-FE\build"));
+// Serve static files from the 'neatlist-FE/build' directory
+app.use(express.static("neatlist-FE/build"));
 
-app.listen(80, () => {
-  console.log("Server is running on port 80");
+// Define your routes and other middleware as needed
+// ...
+
+// Start the Express server
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
