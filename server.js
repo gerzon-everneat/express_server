@@ -3,7 +3,7 @@ const app = express();
 const port = 80; // Choose your desired port
 
 // Serve static files from the 'neatlist-FE/build' directory
-app.use(express.static("/home/ec2-user/neatlist-FE/build"));
+app.use(express.static("/home/ec2-user/neatlist/neatlist-FE/build"));
 
 // Define your routes and other middleware as needed
 // ...
